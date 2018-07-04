@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Axios</title>
+        <style>
+        body {
+            width: 40rem;
+            margin: auto;
+            font-family: sans-serif;
+        }
+        div {
+            margin-bottom: 1rem;
+        }
+        .pokemon-name {
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        img {
+            display: block;
+        }
+        button {
+            background-color: white;
+            border-style: none;
+            border: solid 1px black;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Usando Axios para obtener Pokemon</h1>
+        <div>
+            Escriba ID:
+            <input type="number" min="1" value="1" class="pokemon-input" />
+        </div>
+        <div>
+            <span class="pokemon-name"></span>
+        </div>
+        <img class="pokemon-image">
+        <button class="pokemon-button">Cargar Pokemon</button>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
